@@ -181,4 +181,11 @@ ul li {
         bottom: 15px;
         right: 25px;
     }
+    .footer__container {
+        margin-bottom: 70px;
+    }
+    .footer__container ul {
+        flex-direction: row;
+        justify-content: center;
+    }
 }

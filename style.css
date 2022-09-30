@@ -11,6 +11,7 @@ body {
     font-family: Open sans, sans-serif;
     background: linear-gradient(to right, #fcf3e0, #f3e2cf);
     padding: clamp(20px, 5vw, 50px) 20px 10px;
+    position: relative;
 }
 
 .title__container {
@@ -40,7 +41,7 @@ h1 span:nth-child(2) {
 }
 
 .title__icon {
-    font-size: 40px;
+    display: none;
 }
 
 .form__container, .footer__container  {
@@ -146,20 +147,38 @@ form button:hover {
 .mark span {
     font-weight: 700;
 }
-.help{
-    font-size: 30px;
-}
 
 .footer__container {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .footer__container ul {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
 ul li {
     list-style: none;
     display: flex;
     gap: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 650px) {
+    .title__icon {
+        display: block;
+    font-size: 40px;
+    }
+}
+@media (min-width: 800px) {
+    .icons {
+        position: absolute;
+        bottom: 15px;
+        right: 25px;
+    }
 }

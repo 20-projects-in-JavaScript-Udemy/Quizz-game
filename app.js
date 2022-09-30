@@ -33,6 +33,7 @@ const showResults = (results) => {
             titleResult.textContent = `🚀✨ Wubba Lubba Dub Dub  ! ✨🚀`;
             helpResult.textContent = "⬇️⬇️⬇️ Contact me ⬇️⬇️⬇️";
             helpResult.style.display = "block";
+            helpResult.style.fontSize = "30px"
             markResult.innerHTML = "Score : <span>5 / 5</span>";
             markResult.style.display = "block";
             break;
@@ -41,6 +42,7 @@ const showResults = (results) => {
             helpResult.textContent =
                 "Enter another answer in the red box, then re-validate !";
             helpResult.style.display = "block";
+            helpResult.style.fontSize = "inherit"
             markResult.innerHTML = "Score : <span>4 / 5</span>";
             markResult.style.display = "block";
             break;
@@ -49,6 +51,7 @@ const showResults = (results) => {
             helpResult.textContent =
                 "Enter another answer in the red boxes, then re-validate !";
             helpResult.style.display = "block";
+            helpResult.style.fontSize = "inherit"
             markResult.innerHTML = "Score : <span>3 / 5</span>";
             markResult.style.display = "block";
             break;
@@ -57,6 +60,7 @@ const showResults = (results) => {
             helpResult.textContent =
                 "Enter another answer in the red boxes, then re-validate !";
             helpResult.style.display = "block";
+            helpResult.style.fontSize = "inherit"
             markResult.innerHTML = "Score : <span>2 / 5</span>";
             markResult.style.display = "block";
             break;
@@ -65,6 +69,7 @@ const showResults = (results) => {
             helpResult.textContent =
                 "Enter another answer in the red boxes, then re-validate !";
             helpResult.style.display = "block";
+            helpResult.style.fontSize = "inherit"
             markResult.innerHTML = "Score : <span>1 / 5</span>";
             markResult.style.display = "block";
             break;
@@ -73,6 +78,7 @@ const showResults = (results) => {
             helpResult.style.display = "block";
             helpResult.textContent =
                 "Enter another answer in the red boxes, then re-validate !";
+            helpResult.style.fontSize = "inherit"
             markResult.style.display = "block";
             markResult.innerHTML = "Score : <span>0 / 5</span>";
             break;

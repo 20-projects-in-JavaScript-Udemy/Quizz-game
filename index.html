@@ -4,120 +4,170 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quizz JS</title>
+    <meta name="description" content="A quiz about roy framery who want to become a front-end developer">
+    <title>Quiz</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 </head>
 
 <body>
-    <h1>
-        <span>Quizz</span>
-        Culture générales. 🚀
-    </h1>
+    <div class="title__container">
+        <div class="title__icon">🚀</div>
+        <h1>
+            <span>Quiz on</span>
+            <span>Roy want to become a front-end developer</span>
+        </h1>
+        <div class="title__icon">🚀</div>
+    </div>
 
     <div class="form__container">
         <form class="quiz">
             <div class="question__block">
-                <h4>Qui est sacré empereur de France le 2 décembre 1804 ?</h4>
+                <h4>What are my main hard skills ?</h4>
                 <div>
-                    <input type="radio" id="clovis" name="q1" value="a" checked>
-                    <label for="clovis">Clovis</label>
+                    <input type="radio" id="react" name="q1" value="a" checked />
+                    <label for="react">
+                        <abbr title="HyperText Markup Language">HTML,</abbr>
+                        <abbr title="Cascading Style Sheets">CSS,</abbr>
+                        <abbr title="Syntactically Awesome Style Sheets">SASS,</abbr>
+                        JavaScript, React, nodeJs
+                    </label>
+                </div>
+
+                <div>
+                    <input type="radio" id="Belgrade" name="q1" value="b" />
+                    <label for="Belgrade">Knit, draw, hike, play videogames and boardgames</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="Bratislava" name="q1" value="c" />
+                    <label for="Bratislava">
+                        HTML, CSS, JavaScript, 
+                        <abbr title="Hypertext Preprocessor">PHP,</abbr>
+                        <abbr title="Structured Query Language">SQL,</abbr>
+                        CodeIgniter
+
+                    </label>
                 </div>
                 <div>
-                    <input type="radio" id="lincoln" name="q1" value="b">
-                    <label for="lincoln">Abraham Lincoln</label>
+                    <input type="radio" id="d" name="q1" value="d" disabled/>
+                    <label for="d">D, la réponse D</label>
+                </div>
+            </div>
+
+            <div class="question__block">
+                <h4>What are my sofk skills ?</h4>
+                <div>
+                    <input type="radio" id="whistle" name="q2" value="a" checked />
+                    <label for="whistle">Read a book, cook pancakes, knit a beanie and whistle with my fingers</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="willingness" name="q2" value="b" />
+                    <label for="willingness">Autonomy, willingness to learn, teamwork, empathy, adaptive and humour </label>
+                </div>
+
+                <div>
+                    <input type="radio" id="creativity" name="q2" value="c" />
+                    <label for="creativity">Leadership, creativity, competitiveness, influence and Good attitude </label>
+                </div>
+            </div>
+
+            <div class="question__block">
+                <h4>What are my main values as a developer ?</h4>
+                <div>
+                    <input type="radio" id="greedy" name="q3" value="a" checked>
+                    <label for="greedy">Individualism, incurious and greedy </label>
                 </div>
                 <div>
-                    <input type="radio" id="bonaparte" name="q1" value="c">
-                    <label for="bonaparte">Napoleon Bonaparte</label>
+                    <input type="radio" id="love" name="q3" value="b">
+                    <label for="love">Peace, justice, tolerance and love ! 👑</label>
+                </div>
+                <div>
+                    <input type="radio" id="human" name="q3" value="c">
+                    <label for="human">Human, eco-design and cooperation </label>
                 </div>
             </div>
             
             <div class="question__block">
-                <h4>Quand la déclaration d’indépendance des Etats-Unis a-t-elle été votée ?</h4>
+                <h4>What kind of certification am I taking now ?</h4>
                 <div>
-                    <input type="radio" id="date1" name="q2" value="a" checked />
-                    <label for="date1">4 juillet 1776</label>
+                    <input type="radio" id="opquast" name="q4" value="a" checked />
+                    <label for="opquast"><a href="https://www.opquast.com/en/" target="_blank"><abbr title="Open Quality Standards">OPQUAST</abbr></a> certification </label>
                 </div>
 
                 <div>
-                    <input type="radio" id="date2" name="q2" value="b" />
-                    <label for="date2">18 avril 1856</label>
+                    <input type="radio" id="ninja" name="q4" value="b" />
+                    <label for="ninja">Ninja certification at the <a href="https://www.worldninjasport.com/" target="_blank">World Ninja Sport company</a></label>
                 </div>
 
                 <div>
-                    <input type="radio" id="date3" name="q2" value="c" />
-                    <label for="date3">30 juin 1925</label>
-                </div>
-            </div>
-
-            <div class="question__block">
-                <h4>Quand a eu lieu la chute de l’empire romain d'occident ?</h4>
-                <div>
-                    <input type="radio" id="date4" name="q3" value="a" checked />
-                    <label for="date4">15 ap. J.-C.</label>
-                </div>
-
-                <div>
-                    <input type="radio" id="date5" name="q3" value="b" />
-                    <label for="date5">476 ap. J.-C.</label>
-                </div>
-
-                <div>
-                    <input type="radio" id="date6" name="q3" value="c" />
-                    <label for="date6">-740 av. J.-C.</label>
+                    <input type="radio" id="pmp" name="q4" value="c" />
+                    <label for="pmp">
+                        <abbr title="Project Management Professional">PMP</abbr> certification
+                        <a href="https://en.wikipedia.org/wiki/Project_Management_Professional" target="_blank">(Wikipedia)</a>
+                    </label>
                 </div>
             </div>
 
             <div class="question__block">
-                <h4>Quelle est la capitale de la Slovénie ?</h4>
-
-                <div>
-                    <input type="radio" id="Ljubljana" name="q4" value="a" checked />
-                    <label for="Ljubljana">Ljubljana</label>
-                </div>
-
-                <div>
-                    <input type="radio" id="Belgrade" name="q4" value="b" />
-                    <label for="Belgrade">Belgrade</label>
-                </div>
-
-                <div>
-                    <input type="radio" id="Bratislava" name="q4" value="c" />
-                    <label for="Bratislava">Bratislava</label>
-                </div>
-            </div>
-
-            <div class="question__block">
-                <h4>Combien d'habitants compte l'Irlande en 2020 ?</h4>
+                <h4>where do I want to find a job ?</h4>
                 <div>
                     <input type="radio" id="m1" name="q5" value="a" checked />
-                    <label for="m1">1,365 Million</label>
+                    <label for="m1">In Paris (and its beautiful architecture) !</label>
                 </div>
 
                 <div>
                     <input type="radio" id="m2" name="q5" value="b" />
-                    <label for="m2">21 Millions</label>
+                    <label for="m2">
+                        At the <abbr title="World Organization Of Human Protection">WOOP</abbr> ! 
+                        <a href="https://www.youtube.com/watch?v=FlvskzTxlkA" target="_blank">(Dududuuuu dududu 📲)</a>
+                    </label>
                 </div>
 
                 <div>
-                    <input type="radio" id="m3" name="q5" value="c" />
-                    <label for="m3">4,9 Millions</label>
+                    <input type="radio" id="swiss" name="q5" value="c" />
+                    <label for="swiss">In Switzerland (Swiss Romandie) 🐄🍫</label>
                 </div>
             </div>
-            <button type="submit">VALIDER</button>
+
+
+
+
+            <button type="submit">Confirm</button>
         </form>
 
         <div class="results">
-            <h2>Cliquez sur <span>valider</span> pour voir les <span>résultats</span>.</h2>
+            <h2>click on <span>confirm</span> to see the <span>results</span>.</h2>
             <p class="mark"></p>
             <p class="help"></p>
         </div>
     </div>
+    <footer class="footer__container">
+        <ul>
+            <li>
+                <img src="./img/gmail.png" alt="">
+                <a href="mailto:roy.framery@gmail.com">roy.framery@gmail.com</a> 
+            </li>
+            <li>
+                <img src="./img/smartphone.png" alt="">
+                <a href="tel:+33618141400">06 18 14 14 00</a>
+            </li>
+            <li>
+                <img src="./img/linkedin.png" alt="">
+                <a href="https://www.linkedin.com/in/roy-framery/">LinkedIn</a>
+            </li>
+            <li>
+                <img src="./img/cv.png" alt="">
+                <a href="./docs/CV_Framery_Roy_Frontend_Developer.pdf" target="_blank">Curiculum Vitae</a>
+            </li>
+        </ul>
+    </footer>
 
     <script src="app.js"></script>
 </body>
